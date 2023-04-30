@@ -1,0 +1,875 @@
+activate does not accept more than one argument:
+['/work/donglab/ching.ki/ssRNA-MD/MD_sim/data/sasdfb9_m16.pdb', '30', 'Na+']
+
+Created new /scratch/ching.ki/sasdfb9_m16_30_Na+
++ conc=30
++ ion=Na+
++ SRC=/work/donglab/ching.ki/ssRNA-MD/MD_sim/src
++ '[' -f leap.log ']'
++ '[' -f volume.in ']'
++ cat
++ tleap -f volume.in
+++ python /work/donglab/ching.ki/ssRNA-MD/MD_sim/src/conc.py 30
++ ions=13
++ '[' Na+ = Na+ ']'
++ counter_ions=13
++ rm leap.log volume.in
++ cat
++ tleap -f tleap.in
+                      :-) GROMACS - gmx grompp, 2021.5 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.5
+Executable:   /work/donglab/software/gromacs-2021.5/build/bin//gmx
+Data prefix:  /work/donglab/software/gromacs-2021.5 (source tree)
+Working dir:  /scratch/ching.ki/sasdfb9_m16_30_Na+
+Command line:
+  gmx grompp -f /work/donglab/ching.ki/ssRNA-MD/MD_sim/src/md_params/minim.mdp -c rna.gro -p rna.top -o em.tpr
+
+Ignoring obsolete mdp entry 'ns_type'
+
+NOTE 1 [file /work/donglab/ching.ki/ssRNA-MD/MD_sim/src/md_params/minim.mdp]:
+  With Verlet lists the optimal nstlist is >= 10, with GPUs >= 20. Note
+  that with the Verlet scheme, nstlist has no effect on the accuracy of
+  your simulation.
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group rest is 130401.00
+
+There was 1 note
+
+GROMACS reminds you: "A tidy laboratory means a lazy chemist." (J.J. Berzelius)
+
+Setting the LD random seed to -1613007345
+
+Generated 300 of the 300 non-bonded parameter combinations
+
+Generated 300 of the 300 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'system1'
+
+Excluding 3 bonded neighbours molecule type 'Na+'
+
+Excluding 3 bonded neighbours molecule type 'Cl-'
+
+Excluding 3 bonded neighbours molecule type 'WAT'
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are:     2      Other residues
+There are:    28        RNA residues
+There are:    55        Ion residues
+There are: 21212      Water residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 84x84x84, spacing 0.116 0.116 0.116
+
+Estimate for the relative computational load of the PME mesh part: 0.30
+
+This run will generate roughly 7 Mb of data
+                      :-) GROMACS - gmx mdrun, 2021.5 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.5
+Executable:   /work/donglab/software/gromacs-2021.5/build/bin//gmx
+Data prefix:  /work/donglab/software/gromacs-2021.5 (source tree)
+Working dir:  /scratch/ching.ki/sasdfb9_m16_30_Na+
+Command line:
+  gmx mdrun -v -deffnm em
+
+Reading file em.tpr, VERSION 2021.5 (single precision)
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 28 OpenMP threads 
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+03
+   Number of steps    =        50000
+Step=    0, Dmax= 1.0e-02 nm, Epot= -1.03120e+06 Fmax= 1.84961e+04, atom= 22061
+Step=    1, Dmax= 1.0e-02 nm, Epot= -1.03751e+06 Fmax= 6.61717e+03, atom= 22061
+Step=    2, Dmax= 1.2e-02 nm, Epot= -1.05267e+06 Fmax= 3.78159e+03, atom= 521
+Step=    3, Dmax= 1.4e-02 nm, Epot= -1.07440e+06 Fmax= 4.13719e+03, atom= 791
+Step=    4, Dmax= 1.7e-02 nm, Epot= -1.08552e+06 Fmax= 1.42667e+04, atom= 791
+Step=    5, Dmax= 2.1e-02 nm, Epot= -1.09247e+06 Fmax= 1.15169e+04, atom= 791
+Step=    6, Dmax= 2.5e-02 nm, Epot= -1.09167e+06 Fmax= 2.04198e+04, atom= 148Step=    7, Dmax= 1.2e-02 nm, Epot= -1.09793e+06 Fmax= 4.67075e+03, atom= 148
+Step=    8, Dmax= 1.5e-02 nm, Epot= -1.10090e+06 Fmax= 1.55963e+04, atom= 577
+Step=    9, Dmax= 1.8e-02 nm, Epot= -1.10715e+06 Fmax= 9.64181e+03, atom= 577
+Step=   10, Dmax= 2.1e-02 nm, Epot= -1.10558e+06 Fmax= 2.13952e+04, atom= 577Step=   11, Dmax= 1.1e-02 nm, Epot= -1.11073e+06 Fmax= 5.63595e+03, atom= 643
+Step=   12, Dmax= 1.3e-02 nm, Epot= -1.11302e+06 Fmax= 1.27852e+04, atom= 643
+Step=   13, Dmax= 1.5e-02 nm, Epot= -1.11648e+06 Fmax= 9.58482e+03, atom= 643
+Step=   14, Dmax= 1.9e-02 nm, Epot= -1.11683e+06 Fmax= 1.71854e+04, atom= 643
+Step=   15, Dmax= 2.2e-02 nm, Epot= -1.11997e+06 Fmax= 1.51005e+04, atom= 643
+Step=   16, Dmax= 2.7e-02 nm, Epot= -1.11817e+06 Fmax= 2.36472e+04, atom= 643Step=   17, Dmax= 1.3e-02 nm, Epot= -1.12424e+06 Fmax= 4.43717e+03, atom= 576
+Step=   18, Dmax= 1.6e-02 nm, Epot= -1.12532e+06 Fmax= 1.93039e+04, atom= 576
+Step=   19, Dmax= 1.9e-02 nm, Epot= -1.13006e+06 Fmax= 9.06080e+03, atom= 576
+Step=   20, Dmax= 2.3e-02 nm, Epot= -1.12781e+06 Fmax= 2.50897e+04, atom= 576Step=   21, Dmax= 1.2e-02 nm, Epot= -1.13189e+06 Fmax= 7.85179e+03, atom= 576
+Step=   22, Dmax= 1.4e-02 nm, Epot= -1.13311e+06 Fmax= 1.23820e+04, atom= 576
+Step=   23, Dmax= 1.7e-02 nm, Epot= -1.13478e+06 Fmax= 1.19654e+04, atom= 576
+Step=   24, Dmax= 2.0e-02 nm, Epot= -1.13520e+06 Fmax= 1.71490e+04, atom= 576
+Step=   25, Dmax= 2.4e-02 nm, Epot= -1.13650e+06 Fmax= 1.79302e+04, atom= 576
+Step=   26, Dmax= 2.9e-02 nm, Epot= -1.13582e+06 Fmax= 2.39571e+04, atom= 576Step=   27, Dmax= 1.4e-02 nm, Epot= -1.14018e+06 Fmax= 3.26457e+03, atom= 576
+Step=   28, Dmax= 1.7e-02 nm, Epot= -1.14166e+06 Fmax= 2.22090e+04, atom= 576
+Step=   29, Dmax= 2.1e-02 nm, Epot= -1.14570e+06 Fmax= 8.25510e+03, atom= 576
+Step=   30, Dmax= 2.5e-02 nm, Epot= -1.14314e+06 Fmax= 2.85594e+04, atom= 576Step=   31, Dmax= 1.2e-02 nm, Epot= -1.14678e+06 Fmax= 9.92638e+03, atom= 576
+Step=   32, Dmax= 1.5e-02 nm, Epot= -1.14773e+06 Fmax= 1.18249e+04, atom= 576
+Step=   33, Dmax= 1.8e-02 nm, Epot= -1.14850e+06 Fmax= 1.43828e+04, atom= 576
+Step=   34, Dmax= 2.1e-02 nm, Epot= -1.14910e+06 Fmax= 1.69862e+04, atom= 585
+Step=   35, Dmax= 2.6e-02 nm, Epot= -1.14934e+06 Fmax= 2.07651e+04, atom= 585
+Step=   36, Dmax= 3.1e-02 nm, Epot= -1.14933e+06 Fmax= 2.44933e+04, atom= 585Step=   37, Dmax= 1.5e-02 nm, Epot= -1.15272e+06 Fmax= 2.09280e+03, atom= 576
+Step=   38, Dmax= 1.9e-02 nm, Epot= -1.15554e+06 Fmax= 2.52706e+04, atom= 576
+Step=   39, Dmax= 2.2e-02 nm, Epot= -1.15912e+06 Fmax= 7.58588e+03, atom= 585
+Step=   40, Dmax= 2.7e-02 nm, Epot= -1.15653e+06 Fmax= 3.18984e+04, atom= 585Step=   41, Dmax= 1.3e-02 nm, Epot= -1.15974e+06 Fmax= 1.20101e+04, atom= 585
+Step=   42, Dmax= 1.6e-02 nm, Epot= -1.16058e+06 Fmax= 1.14881e+04, atom= 585
+Step=   43, Dmax= 1.9e-02 nm, Epot= -1.16083e+06 Fmax= 1.67051e+04, atom= 585
+Step=   44, Dmax= 2.3e-02 nm, Epot= -1.16153e+06 Fmax= 1.71247e+04, atom= 585
+Step=   45, Dmax= 2.8e-02 nm, Epot= -1.16123e+06 Fmax= 2.34755e+04, atom= 585Step=   46, Dmax= 1.4e-02 nm, Epot= -1.16333e+06 Fmax= 3.03663e+03, atom= 585
+Step=   47, Dmax= 1.7e-02 nm, Epot= -1.16412e+06 Fmax= 2.11541e+04, atom= 585
+Step=   48, Dmax= 2.0e-02 nm, Epot= -1.16641e+06 Fmax= 7.82078e+03, atom= 585
+Step=   49, Dmax= 2.4e-02 nm, Epot= -1.16465e+06 Fmax= 2.70221e+04, atom= 585Step=   50, Dmax= 1.2e-02 nm, Epot= -1.16700e+06 Fmax= 9.68467e+03, atom= 585
+Step=   51, Dmax= 1.4e-02 nm, Epot= -1.16754e+06 Fmax= 1.12826e+04, atom= 585
+Step=   52, Dmax= 1.7e-02 nm, Epot= -1.16794e+06 Fmax= 1.39206e+04, atom= 585
+Step=   53, Dmax= 2.1e-02 nm, Epot= -1.16827e+06 Fmax= 1.62926e+04, atom= 585
+Step=   54, Dmax= 2.5e-02 nm, Epot= -1.16831e+06 Fmax= 1.99967e+04, atom= 585
+Step=   55, Dmax= 3.0e-02 nm, Epot= -1.16826e+06 Fmax= 2.35430e+04, atom= 585Step=   56, Dmax= 1.5e-02 nm, Epot= -1.17053e+06 Fmax= 1.64641e+03, atom= 585
+Step=   57, Dmax= 1.8e-02 nm, Epot= -1.17217e+06 Fmax= 2.43862e+04, atom= 585
+Step=   58, Dmax= 2.1e-02 nm, Epot= -1.17520e+06 Fmax= 6.70127e+03, atom= 585
+Step=   59, Dmax= 2.6e-02 nm, Epot= -1.17195e+06 Fmax= 3.08936e+04, atom= 585Step=   60, Dmax= 1.3e-02 nm, Epot= -1.17540e+06 Fmax= 1.21381e+04, atom= 585
+Step=   61, Dmax= 1.5e-02 nm, Epot= -1.17606e+06 Fmax= 1.03811e+04, atom= 585
+Step=   62, Dmax= 1.9e-02 nm, Epot= -1.17582e+06 Fmax= 1.66931e+04, atom= 585Step=   63, Dmax= 9.3e-03 nm, Epot= -1.17688e+06 Fmax= 3.18237e+03, atom= 585
+Step=   64, Dmax= 1.1e-02 nm, Epot= -1.17730e+06 Fmax= 1.30422e+04, atom= 585
+Step=   65, Dmax= 1.3e-02 nm, Epot= -1.17831e+06 Fmax= 6.52026e+03, atom= 585
+Step=   66, Dmax= 1.6e-02 nm, Epot= -1.17791e+06 Fmax= 1.68814e+04, atom= 585Step=   67, Dmax= 8.0e-03 nm, Epot= -1.17880e+06 Fmax= 5.15238e+03, atom= 585
+Step=   68, Dmax= 9.6e-03 nm, Epot= -1.17916e+06 Fmax= 8.90903e+03, atom= 585
+Step=   69, Dmax= 1.2e-02 nm, Epot= -1.17967e+06 Fmax= 7.89956e+03, atom= 585
+Step=   70, Dmax= 1.4e-02 nm, Epot= -1.17978e+06 Fmax= 1.23336e+04, atom= 585
+Step=   71, Dmax= 1.7e-02 nm, Epot= -1.18026e+06 Fmax= 1.18811e+04, atom= 585
+Step=   72, Dmax= 2.0e-02 nm, Epot= -1.17999e+06 Fmax= 1.72423e+04, atom= 585Step=   73, Dmax= 1.0e-02 nm, Epot= -1.18121e+06 Fmax= 2.71799e+03, atom= 585
+Step=   74, Dmax= 1.2e-02 nm, Epot= -1.18152e+06 Fmax= 1.47399e+04, atom= 585
+Step=   75, Dmax= 1.4e-02 nm, Epot= -1.18269e+06 Fmax= 6.31385e+03, atom= 585
+Step=   76, Dmax= 1.7e-02 nm, Epot= -1.18194e+06 Fmax= 1.88732e+04, atom= 585Step=   77, Dmax= 8.6e-03 nm, Epot= -1.18310e+06 Fmax= 6.24205e+03, atom= 585
+Step=   78, Dmax= 1.0e-02 nm, Epot= -1.18338e+06 Fmax= 8.87316e+03, atom= 585
+Step=   79, Dmax= 1.2e-02 nm, Epot= -1.18375e+06 Fmax= 9.20750e+03, atom= 585
+Step=   80, Dmax= 1.5e-02 nm, Epot= -1.18385e+06 Fmax= 1.25446e+04, atom= 585
+Step=   81, Dmax= 1.8e-02 nm, Epot= -1.18412e+06 Fmax= 1.35016e+04, atom= 585
+Step=   82, Dmax= 2.1e-02 nm, Epot= -1.18389e+06 Fmax= 1.78106e+04, atom= 585Step=   83, Dmax= 1.1e-02 nm, Epot= -1.18521e+06 Fmax= 2.20516e+03, atom= 585
+Step=   84, Dmax= 1.3e-02 nm, Epot= -1.18548e+06 Fmax= 1.65836e+04, atom= 585
+Step=   85, Dmax= 1.5e-02 nm, Epot= -1.18687e+06 Fmax= 6.07918e+03, atom= 585
+Step=   86, Dmax= 1.8e-02 nm, Epot= -1.18574e+06 Fmax= 2.10291e+04, atom= 585Step=   87, Dmax= 9.2e-03 nm, Epot= -1.18718e+06 Fmax= 7.42547e+03, atom= 585
+Step=   88, Dmax= 1.1e-02 nm, Epot= -1.18745e+06 Fmax= 8.82378e+03, atom= 585
+Step=   89, Dmax= 1.3e-02 nm, Epot= -1.18765e+06 Fmax= 1.06257e+04, atom= 585
+Step=   90, Dmax= 1.6e-02 nm, Epot= -1.18779e+06 Fmax= 1.27618e+04, atom= 585
+Step=   91, Dmax= 1.9e-02 nm, Epot= -1.18783e+06 Fmax= 1.52562e+04, atom= 585
+Step=   92, Dmax= 2.3e-02 nm, Epot= -1.18768e+06 Fmax= 1.84119e+04, atom= 585Step=   93, Dmax= 1.1e-02 nm, Epot= -1.18910e+06 Fmax= 1.64583e+03, atom= 585
+Step=   94, Dmax= 1.4e-02 nm, Epot= -1.18951e+06 Fmax= 1.85804e+04, atom= 585
+Step=   95, Dmax= 1.7e-02 nm, Epot= -1.19113e+06 Fmax= 5.82977e+03, atom= 585
+Step=   96, Dmax= 2.0e-02 nm, Epot= -1.18965e+06 Fmax= 2.33490e+04, atom= 585Step=   97, Dmax= 9.9e-03 nm, Epot= -1.19132e+06 Fmax= 8.69502e+03, atom= 585
+Step=   98, Dmax= 1.2e-02 nm, Epot= -1.19161e+06 Fmax= 8.77514e+03, atom= 585
+Step=   99, Dmax= 1.4e-02 nm, Epot= -1.19165e+06 Fmax= 1.21502e+04, atom= 585
+Step=  100, Dmax= 1.7e-02 nm, Epot= -1.19186e+06 Fmax= 1.29998e+04, atom= 585
+Step=  101, Dmax= 2.1e-02 nm, Epot= -1.19166e+06 Fmax= 1.71438e+04, atom= 585Step=  102, Dmax= 1.0e-02 nm, Epot= -1.19274e+06 Fmax= 2.01110e+03, atom= 585
+Step=  103, Dmax= 1.2e-02 nm, Epot= -1.19289e+06 Fmax= 1.60659e+04, atom= 585
+Step=  104, Dmax= 1.5e-02 nm, Epot= -1.19408e+06 Fmax= 5.51947e+03, atom= 585
+Step=  105, Dmax= 1.8e-02 nm, Epot= -1.19296e+06 Fmax= 2.04802e+04, atom= 585Step=  106, Dmax= 8.9e-03 nm, Epot= -1.19428e+06 Fmax= 7.51392e+03, atom= 585
+Step=  107, Dmax= 1.1e-02 nm, Epot= -1.19452e+06 Fmax= 8.07519e+03, atom= 585
+Step=  108, Dmax= 1.3e-02 nm, Epot= -1.19461e+06 Fmax= 1.06833e+04, atom= 585
+Step=  109, Dmax= 1.5e-02 nm, Epot= -1.19477e+06 Fmax= 1.17779e+04, atom= 585
+Step=  110, Dmax= 1.8e-02 nm, Epot= -1.19464e+06 Fmax= 1.52270e+04, atom= 585Step=  111, Dmax= 9.2e-03 nm, Epot= -1.19553e+06 Fmax= 1.76318e+03, atom= 585
+Step=  112, Dmax= 1.1e-02 nm, Epot= -1.19578e+06 Fmax= 1.44233e+04, atom= 585
+Step=  113, Dmax= 1.3e-02 nm, Epot= -1.19676e+06 Fmax= 5.11386e+03, atom= 585
+Step=  114, Dmax= 1.6e-02 nm, Epot= -1.19598e+06 Fmax= 1.82502e+04, atom= 585Step=  115, Dmax= 8.0e-03 nm, Epot= -1.19697e+06 Fmax= 6.53175e+03, atom= 585
+Step=  116, Dmax= 9.6e-03 nm, Epot= -1.19717e+06 Fmax= 7.48575e+03, atom= 585
+Step=  117, Dmax= 1.1e-02 nm, Epot= -1.19730e+06 Fmax= 9.28964e+03, atom= 585
+Step=  118, Dmax= 1.4e-02 nm, Epot= -1.19742e+06 Fmax= 1.08855e+04, atom= 585
+Step=  119, Dmax= 1.7e-02 nm, Epot= -1.19744e+06 Fmax= 1.32807e+04, atom= 585
+Step=  120, Dmax= 2.0e-02 nm, Epot= -1.19737e+06 Fmax= 1.57619e+04, atom= 585Step=  121, Dmax= 9.9e-03 nm, Epot= -1.19833e+06 Fmax= 1.29177e+03, atom= 585
+Step=  122, Dmax= 1.2e-02 nm, Epot= -1.19878e+06 Fmax= 1.61217e+04, atom= 585
+Step=  123, Dmax= 1.4e-02 nm, Epot= -1.19993e+06 Fmax= 4.91727e+03, atom= 585
+Step=  124, Dmax= 1.7e-02 nm, Epot= -1.19889e+06 Fmax= 2.02239e+04, atom= 585Step=  125, Dmax= 8.6e-03 nm, Epot= -1.20006e+06 Fmax= 7.60645e+03, atom= 585
+Step=  126, Dmax= 1.0e-02 nm, Epot= -1.20029e+06 Fmax= 7.46333e+03, atom= 585
+Step=  127, Dmax= 1.2e-02 nm, Epot= -1.20031e+06 Fmax= 1.05833e+04, atom= 585
+Step=  128, Dmax= 1.5e-02 nm, Epot= -1.20048e+06 Fmax= 1.11115e+04, atom= 585
+Step=  129, Dmax= 1.8e-02 nm, Epot= -1.20032e+06 Fmax= 1.48858e+04, atom= 585Step=  130, Dmax= 8.9e-03 nm, Epot= -1.20110e+06 Fmax= 1.84163e+03, atom= 585
+Step=  131, Dmax= 1.1e-02 nm, Epot= -1.20120e+06 Fmax= 1.37656e+04, atom= 585
+Step=  132, Dmax= 1.3e-02 nm, Epot= -1.20204e+06 Fmax= 4.86565e+03, atom= 585
+Step=  133, Dmax= 1.5e-02 nm, Epot= -1.20129e+06 Fmax= 1.75700e+04, atom= 585Step=  134, Dmax= 7.7e-03 nm, Epot= -1.20220e+06 Fmax= 6.37845e+03, atom= 585
+Step=  135, Dmax= 9.2e-03 nm, Epot= -1.20237e+06 Fmax= 7.06974e+03, atom= 585
+Step=  136, Dmax= 1.1e-02 nm, Epot= -1.20245e+06 Fmax= 9.11411e+03, atom= 585
+Step=  137, Dmax= 1.3e-02 nm, Epot= -1.20257e+06 Fmax= 1.02625e+04, atom= 585
+Step=  138, Dmax= 1.6e-02 nm, Epot= -1.20251e+06 Fmax= 1.30347e+04, atom= 585Step=  139, Dmax= 8.0e-03 nm, Epot= -1.20312e+06 Fmax= 1.41615e+03, atom= 585
+Step=  140, Dmax= 9.6e-03 nm, Epot= -1.20342e+06 Fmax= 1.25287e+04, atom= 585
+Step=  141, Dmax= 1.1e-02 nm, Epot= -1.20413e+06 Fmax= 4.31622e+03, atom= 585
+Step=  142, Dmax= 1.4e-02 nm, Epot= -1.20360e+06 Fmax= 1.58248e+04, atom= 585Step=  143, Dmax= 6.9e-03 nm, Epot= -1.20429e+06 Fmax= 5.72747e+03, atom= 585
+Step=  144, Dmax= 8.3e-03 nm, Epot= -1.20446e+06 Fmax= 6.36521e+03, atom= 585
+Step=  145, Dmax= 9.9e-03 nm, Epot= -1.20456e+06 Fmax= 8.10442e+03, atom= 585
+Step=  146, Dmax= 1.2e-02 nm, Epot= -1.20467e+06 Fmax= 9.30020e+03, atom= 585
+Step=  147, Dmax= 1.4e-02 nm, Epot= -1.20468e+06 Fmax= 1.15448e+04, atom= 585
+Step=  148, Dmax= 1.7e-02 nm, Epot= -1.20467e+06 Fmax= 1.35089e+04, atom= 585Step=  149, Dmax= 8.6e-03 nm, Epot= -1.20533e+06 Fmax= 1.02054e+03, atom= 585
+Step=  150, Dmax= 1.0e-02 nm, Epot= -1.20585e+06 Fmax= 1.39720e+04, atom= 585
+Step=  151, Dmax= 1.2e-02 nm, Epot= -1.20669e+06 Fmax= 4.16412e+03, atom= 585
+Step=  152, Dmax= 1.5e-02 nm, Epot= -1.20599e+06 Fmax= 1.75030e+04, atom= 585Step=  153, Dmax= 7.4e-03 nm, Epot= -1.20681e+06 Fmax= 6.63509e+03, atom= 585
+Step=  154, Dmax= 8.9e-03 nm, Epot= -1.20699e+06 Fmax= 6.36426e+03, atom= 585
+Step=  155, Dmax= 1.1e-02 nm, Epot= -1.20702e+06 Fmax= 9.20039e+03, atom= 585
+Step=  156, Dmax= 1.3e-02 nm, Epot= -1.20716e+06 Fmax= 9.51421e+03, atom= 585
+Step=  157, Dmax= 1.5e-02 nm, Epot= -1.20706e+06 Fmax= 1.29079e+04, atom= 585Step=  158, Dmax= 7.7e-03 nm, Epot= -1.20761e+06 Fmax= 1.66321e+03, atom= 585
+Step=  159, Dmax= 9.2e-03 nm, Epot= -1.20773e+06 Fmax= 1.18099e+04, atom= 585
+Step=  160, Dmax= 1.1e-02 nm, Epot= -1.20833e+06 Fmax= 4.27020e+03, atom= 585
+Step=  161, Dmax= 1.3e-02 nm, Epot= -1.20784e+06 Fmax= 1.50907e+04, atom= 585Step=  162, Dmax= 6.6e-03 nm, Epot= -1.20847e+06 Fmax= 5.43077e+03, atom= 585
+Step=  163, Dmax= 7.9e-03 nm, Epot= -1.20861e+06 Fmax= 6.17003e+03, atom= 585
+Step=  164, Dmax= 9.5e-03 nm, Epot= -1.20869e+06 Fmax= 7.79271e+03, atom= 585
+Step=  165, Dmax= 1.1e-02 nm, Epot= -1.20878e+06 Fmax= 8.92289e+03, atom= 585
+Step=  166, Dmax= 1.4e-02 nm, Epot= -1.20877e+06 Fmax= 1.11762e+04, atom= 585Step=  167, Dmax= 6.9e-03 nm, Epot= -1.20919e+06 Fmax= 1.14952e+03, atom= 585
+Step=  168, Dmax= 8.2e-03 nm, Epot= -1.20954e+06 Fmax= 1.08649e+04, atom= 585
+Step=  169, Dmax= 9.9e-03 nm, Epot= -1.21007e+06 Fmax= 3.66051e+03, atom= 585
+Step=  170, Dmax= 1.2e-02 nm, Epot= -1.20972e+06 Fmax= 1.37029e+04, atom= 585Step=  171, Dmax= 5.9e-03 nm, Epot= -1.21020e+06 Fmax= 5.00101e+03, atom= 585
+Step=  172, Dmax= 7.1e-03 nm, Epot= -1.21034e+06 Fmax= 5.43134e+03, atom= 585
+Step=  173, Dmax= 8.5e-03 nm, Epot= -1.21043e+06 Fmax= 7.04930e+03, atom= 585
+Step=  174, Dmax= 1.0e-02 nm, Epot= -1.21053e+06 Fmax= 7.96564e+03, atom= 585
+Step=  175, Dmax= 1.2e-02 nm, Epot= -1.21055e+06 Fmax= 1.00146e+04, atom= 585
+Step=  176, Dmax= 1.5e-02 nm, Epot= -1.21057e+06 Fmax= 1.15986e+04, atom= 585
+Step=  177, Dmax= 1.8e-02 nm, Epot= -1.21046e+06 Fmax= 1.43042e+04, atom= 585Step=  178, Dmax= 8.9e-03 nm, Epot= -1.21119e+06 Fmax= 1.31238e+03, atom= 585
+Step=  179, Dmax= 1.1e-02 nm, Epot= -1.21123e+06 Fmax= 1.42508e+04, atom= 585
+Step=  180, Dmax= 1.3e-02 nm, Epot= -1.21208e+06 Fmax= 4.31388e+03, atom= 585
+Step=  181, Dmax= 1.5e-02 nm, Epot= -1.21115e+06 Fmax= 1.80615e+04, atom= 585Step=  182, Dmax= 7.7e-03 nm, Epot= -1.21214e+06 Fmax= 6.89462e+03, atom= 585
+Step=  183, Dmax= 9.2e-03 nm, Epot= -1.21230e+06 Fmax= 6.51115e+03, atom= 585
+Step=  184, Dmax= 1.1e-02 nm, Epot= -1.21226e+06 Fmax= 9.61479e+03, atom= 585Step=  185, Dmax= 5.5e-03 nm, Epot= -1.21255e+06 Fmax= 1.56349e+03, atom= 585
+Step=  186, Dmax= 6.6e-03 nm, Epot= -1.21272e+06 Fmax= 8.07477e+03, atom= 585
+Step=  187, Dmax= 7.9e-03 nm, Epot= -1.21304e+06 Fmax= 3.56153e+03, atom= 585
+Step=  188, Dmax= 9.5e-03 nm, Epot= -1.21291e+06 Fmax= 1.03522e+04, atom= 585Step=  189, Dmax= 4.8e-03 nm, Epot= -1.21318e+06 Fmax= 3.38498e+03, atom= 585
+Step=  190, Dmax= 5.7e-03 nm, Epot= -1.21329e+06 Fmax= 4.98840e+03, atom= 585
+Step=  191, Dmax= 6.9e-03 nm, Epot= -1.21342e+06 Fmax= 5.01859e+03, atom= 585
+Step=  192, Dmax= 8.2e-03 nm, Epot= -1.21348e+06 Fmax= 7.02930e+03, atom= 585
+Step=  193, Dmax= 9.9e-03 nm, Epot= -1.21360e+06 Fmax= 7.38766e+03, atom= 585
+Step=  194, Dmax= 1.2e-02 nm, Epot= -1.21356e+06 Fmax= 9.95233e+03, atom= 585Step=  195, Dmax= 5.9e-03 nm, Epot= -1.21390e+06 Fmax= 1.29741e+03, atom= 585
+Step=  196, Dmax= 7.1e-03 nm, Epot= -1.21409e+06 Fmax= 9.06286e+03, atom= 585
+Step=  197, Dmax= 8.5e-03 nm, Epot= -1.21448e+06 Fmax= 3.45410e+03, atom= 585
+Step=  198, Dmax= 1.0e-02 nm, Epot= -1.21426e+06 Fmax= 1.15113e+04, atom= 585Step=  199, Dmax= 5.1e-03 nm, Epot= -1.21460e+06 Fmax= 4.01534e+03, atom= 585
+Step=  200, Dmax= 6.1e-03 nm, Epot= -1.21472e+06 Fmax= 4.98479e+03, atom= 585
+Step=  201, Dmax= 7.4e-03 nm, Epot= -1.21482e+06 Fmax= 5.77673e+03, atom= 585
+Step=  202, Dmax= 8.8e-03 nm, Epot= -1.21489e+06 Fmax= 7.17496e+03, atom= 585
+Step=  203, Dmax= 1.1e-02 nm, Epot= -1.21495e+06 Fmax= 8.32887e+03, atom= 585
+Step=  204, Dmax= 1.3e-02 nm, Epot= -1.21493e+06 Fmax= 1.03134e+04, atom= 585Step=  205, Dmax= 6.4e-03 nm, Epot= -1.21531e+06 Fmax= 1.01138e+03, atom= 585
+Step=  206, Dmax= 7.6e-03 nm, Epot= -1.21558e+06 Fmax= 1.01222e+04, atom= 585
+Step=  207, Dmax= 9.2e-03 nm, Epot= -1.21605e+06 Fmax= 3.34441e+03, atom= 585
+Step=  208, Dmax= 1.1e-02 nm, Epot= -1.21572e+06 Fmax= 1.27516e+04, atom= 585Step=  209, Dmax= 5.5e-03 nm, Epot= -1.21615e+06 Fmax= 4.68690e+03, atom= 585
+Step=  210, Dmax= 6.6e-03 nm, Epot= -1.21627e+06 Fmax= 4.98730e+03, atom= 585
+Step=  211, Dmax= 7.9e-03 nm, Epot= -1.21633e+06 Fmax= 6.58602e+03, atom= 585
+Step=  212, Dmax= 9.5e-03 nm, Epot= -1.21641e+06 Fmax= 7.33810e+03, atom= 585
+Step=  213, Dmax= 1.1e-02 nm, Epot= -1.21641e+06 Fmax= 9.33500e+03, atom= 585Step=  214, Dmax= 5.7e-03 nm, Epot= -1.21671e+06 Fmax= 9.81749e+02, atom= 585
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 1000 in 215 steps
+Potential Energy  = -1.2167060e+06
+Maximum force     =  9.8174933e+02 on atom 585
+Norm of force     =  3.4198641e+01
+
+GROMACS reminds you: "You got one part of that wrong. This is not meth." (Breaking Bad)
+
+                      :-) GROMACS - gmx grompp, 2021.5 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.5
+Executable:   /work/donglab/software/gromacs-2021.5/build/bin//gmx
+Data prefix:  /work/donglab/software/gromacs-2021.5 (source tree)
+Working dir:  /scratch/ching.ki/sasdfb9_m16_30_Na+
+Command line:
+  gmx grompp -f /work/donglab/ching.ki/ssRNA-MD/MD_sim/src/md_params/nvt.mdp -c em.gro -r em.gro -p rna.top -o nvt.tpr
+
+Ignoring obsolete mdp entry 'title'
+Ignoring obsolete mdp entry 'ns_type'
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 130069.00
+
+GROMACS reminds you: "You got one part of that wrong. This is not meth." (Breaking Bad)
+
+Setting the LD random seed to -1696072961
+
+Generated 300 of the 300 non-bonded parameter combinations
+
+Generated 300 of the 300 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'system1'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Na+'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Cl-'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'WAT'
+
+turning H bonds into constraints...
+
+Setting gen_seed to -67108865
+
+Velocities were taken from a Maxwell distribution at 300 K
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are:     2      Other residues
+There are:    28        RNA residues
+There are:    55        Ion residues
+There are: 21212      Water residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+
+Calculated rlist for 1x1 atom pair-list as 1.044 nm, buffer size 0.044 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.008 nm, buffer size 0.008 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 64x64x64, spacing 0.152 0.152 0.152
+
+Estimate for the relative computational load of the PME mesh part: 0.24
+
+This run will generate roughly 206 Mb of data
+                      :-) GROMACS - gmx mdrun, 2021.5 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.5
+Executable:   /work/donglab/software/gromacs-2021.5/build/bin//gmx
+Data prefix:  /work/donglab/software/gromacs-2021.5 (source tree)
+Working dir:  /scratch/ching.ki/sasdfb9_m16_30_Na+
+Command line:
+  gmx mdrun -deffnm nvt
+
+Reading file nvt.tpr, VERSION 2021.5 (single precision)
+Changing nstlist from 10 to 80, rlist from 1.008 to 1.16
+
+1 GPU selected for this run.
+Mapping of GPU IDs to the 2 GPU tasks in the 1 rank on this node:
+  PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 28 OpenMP threads 
+
+starting mdrun 'Generic title'
+50000 steps,    100.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    11065.653      395.216     2799.9
+                 (ns/day)    (hour/ns)
+Performance:       21.862        1.098
+
+GROMACS reminds you: "A computer would deserve to be called intelligent if it could deceive a human into believing that it was human." (Alan Turing)
+
+                      :-) GROMACS - gmx grompp, 2021.5 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.5
+Executable:   /work/donglab/software/gromacs-2021.5/build/bin//gmx
+Data prefix:  /work/donglab/software/gromacs-2021.5 (source tree)
+Working dir:  /scratch/ching.ki/sasdfb9_m16_30_Na+
+Command line:
+  gmx grompp -f /work/donglab/ching.ki/ssRNA-MD/MD_sim/src/md_params/npt.mdp -c nvt.gro -r nvt.gro -t nvt.cpt -p rna.top -o npt.tpr
+
+Ignoring obsolete mdp entry 'title'
+Ignoring obsolete mdp entry 'ns_type'
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 130069.00
+Last frame         -1 time  100.000   
+
+GROMACS reminds you: "I've basically become a vegetarian since the only meat I'm eating is from animals I've killed myself" (Mark Zuckerberg)
+
+Setting the LD random seed to -279216681
+
+Generated 300 of the 300 non-bonded parameter combinations
+
+Generated 300 of the 300 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'system1'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Na+'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Cl-'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'WAT'
+
+turning H bonds into constraints...
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are:     2      Other residues
+There are:    28        RNA residues
+There are:    55        Ion residues
+There are: 21212      Water residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+
+Calculated rlist for 1x1 atom pair-list as 1.044 nm, buffer size 0.044 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.008 nm, buffer size 0.008 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+Reading Coordinates, Velocities and Box size from old trajectory
+
+Will read whole trajectory
+
+Using frame at t = 100 ps
+
+Starting time for run is 0 ps
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 64x64x64, spacing 0.152 0.152 0.152
+
+Estimate for the relative computational load of the PME mesh part: 0.24
+
+This run will generate roughly 206 Mb of data
+                      :-) GROMACS - gmx mdrun, 2021.5 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.5
+Executable:   /work/donglab/software/gromacs-2021.5/build/bin//gmx
+Data prefix:  /work/donglab/software/gromacs-2021.5 (source tree)
+Working dir:  /scratch/ching.ki/sasdfb9_m16_30_Na+
+Command line:
+  gmx mdrun -deffnm npt
+
+Reading file npt.tpr, VERSION 2021.5 (single precision)
+Changing nstlist from 10 to 80, rlist from 1.008 to 1.16
+
+1 GPU selected for this run.
+Mapping of GPU IDs to the 2 GPU tasks in the 1 rank on this node:
+  PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 28 OpenMP threads 
+
+starting mdrun 'Generic title'
+50000 steps,    100.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    11655.706      416.286     2799.9
+                 (ns/day)    (hour/ns)
+Performance:       20.755        1.156
+
+GROMACS reminds you: "Check Your Input" (D. Van Der Spoel)
+
+                      :-) GROMACS - gmx grompp, 2021.5 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2021.5
+Executable:   /work/donglab/software/gromacs-2021.5/build/bin//gmx
+Data prefix:  /work/donglab/software/gromacs-2021.5 (source tree)
+Working dir:  /scratch/ching.ki/sasdfb9_m16_30_Na+
+Command line:
+  gmx grompp -f /work/donglab/ching.ki/ssRNA-MD/MD_sim/src/md_params/md.mdp -c npt.gro -t npt.cpt -p rna.top -o md_0_1.tpr
+
+Ignoring obsolete mdp entry 'title'
+Ignoring obsolete mdp entry 'ns_type'
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 130069.00
+Last frame         -1 time  100.000   
+
+GROMACS reminds you: "If you know you are on the right track, if you have this inner knowledge, then nobody can turn you off... no matter what they say." (Barbara McClintock)
+
+Setting the LD random seed to 1995423677
+
+Generated 300 of the 300 non-bonded parameter combinations
+
+Generated 300 of the 300 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'system1'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Na+'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Cl-'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'WAT'
+
+turning H bonds into constraints...
+
+Cleaning up constraints and constant bonded interactions with virtual sites
+Analysing residue names:
+There are:     2      Other residues
+There are:    28        RNA residues
+There are:    55        Ion residues
+There are: 21212      Water residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+
+Calculated rlist for 1x1 atom pair-list as 1.045 nm, buffer size 0.045 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.010 nm, buffer size 0.010 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+Reading Coordinates, Velocities and Box size from old trajectory
+
+Will read whole trajectory
+
+Using frame at t = 100 ps
+
+Starting time for run is 0 ps
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 60x60x60, spacing 0.157 0.157 0.157
+
+Estimate for the relative computational load of the PME mesh part: 0.22
+
+This run will generate roughly 48 Mb of data
+                      :-) GROMACS - gmx mdrun, 2021.5 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2021.5
+Executable:   /work/donglab/software/gromacs-2021.5/build/bin//gmx
+Data prefix:  /work/donglab/software/gromacs-2021.5 (source tree)
+Working dir:  /scratch/ching.ki/sasdfb9_m16_30_Na+
+Command line:
+  gmx mdrun -deffnm md_0_1 -nb gpu
+
+Reading file md_0_1.tpr, VERSION 2021.5 (single precision)
+Changing nstlist from 10 to 80, rlist from 1.01 to 1.165
+
+1 GPU selected for this run.
+Mapping of GPU IDs to the 2 GPU tasks in the 1 rank on this node:
+  PP:0,PME:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+PME tasks will do all aspects on the GPU
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 28 OpenMP threads 
+
+starting mdrun 'Generic title'
+500000 steps,   1000.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:   113654.223     4059.083     2800.0
+                         1h07:39
+                 (ns/day)    (hour/ns)
+Performance:       21.286        1.128
+
+GROMACS reminds you: "I Got a Forty Dollar Bill" (F. Zappa)
+
+                   :-) GROMACS - gmx convert-trj, 2021.5 (-:
+
+                            GROMACS is written by:
+     Andrey Alekseenko              Emile Apol              Rossen Apostolov     
+         Paul Bauer           Herman J.C. Berendsen           Par Bjelkmar       
+       Christian Blau           Viacheslav Bolnykh             Kevin Boyd        
+     Aldert van Buuren           Rudi van Drunen             Anton Feenstra      
+    Gilles Gouaillardet             Alan Gray               Gerrit Groenhof      
+       Anca Hamuraru            Vincent Hindriksen          M. Eric Irrgang      
+      Aleksei Iupinov           Christoph Junghans             Joe Jordan        
+    Dimitrios Karkoulis            Peter Kasson                Jiri Kraus        
+      Carsten Kutzner              Per Larsson              Justin A. Lemkul     
+       Viveca Lindahl            Magnus Lundborg             Erik Marklund       
+        Pascal Merz             Pieter Meulenhoff            Teemu Murtola       
+        Szilard Pall               Sander Pronk              Roland Schulz       
+       Michael Shirts            Alexey Shvetsov             Alfons Sijbers      
+       Peter Tieleman              Jon Vincent              Teemu Virolainen     
+     Christian Wennberg            Maarten Wolf              Artem Zhmurov       
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx convert-trj, version 2021.5
+Executable:   /work/donglab/software/gromacs-2021.5/build/bin//gmx
+Data prefix:  /work/donglab/software/gromacs-2021.5 (source tree)
+Working dir:  /scratch/ching.ki/sasdfb9_m16_30_Na+
+Command line:
+  gmx convert-trj -f md_0_1.xtc -s md_0_1.tpr -o sasdfb9_m16_30_Na+.gro
+
+Reading file md_0_1.tpr, VERSION 2021.5 (single precision)
+Reading file md_0_1.tpr, VERSION 2021.5 (single precision)
+Reading frame       0 time    0.000   Reading frame       1 time   10.000   Reading frame       2 time   20.000   Reading frame       3 time   30.000   Reading frame       4 time   40.000   Reading frame       5 time   50.000   Reading frame       6 time   60.000   Reading frame       7 time   70.000   Reading frame       8 time   80.000   Reading frame       9 time   90.000   Reading frame      10 time  100.000   Reading frame      11 time  110.000   Reading frame      12 time  120.000   Reading frame      13 time  130.000   Reading frame      14 time  140.000   Reading frame      15 time  150.000   Reading frame      16 time  160.000   Reading frame      17 time  170.000   Reading frame      18 time  180.000   Reading frame      19 time  190.000   Reading frame      20 time  200.000   Reading frame      30 time  300.000   Reading frame      40 time  400.000   Reading frame      50 time  500.000   Reading frame      60 time  600.000   Reading frame      70 time  700.000   Reading frame      80 time  800.000   Reading frame      90 time  900.000   Reading frame     100 time 1000.000   Last frame        100 time 1000.000   
+Analyzed 101 frames, last time 1000.000
+
+GROMACS reminds you: "Our struggle today is not to have a female Einstein get appointed as an assistant professor. It is for a woman schlemiel to get as quickly promoted as a male schlemiel." (Bella Abzug)
+
