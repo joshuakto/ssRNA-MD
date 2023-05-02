@@ -6,9 +6,10 @@
 
 ## Current progress
 ### VAE: latent space encoding clusters by variables of interest after learning
-Epoch 0
-![Epoch 0](results/tsne_transformed_latent_space_epoch0.png)
-Epoch 19
-![Epoch 19](results/tsne_transformed_latent_space_epoch19.png)
+
+|             Epoch             |
+|       0       |       19      |
+| ------------- | ------------- |
+| ![Epoch 0](results/VAE/tsne_transformed_latent_space_epoch0.png)  | ![Epoch 19](results/tsne_transformed_latent_space_epoch19.png)  |
 
 ### CVAE: prediction of distance array for specific ion type and ions concentration
